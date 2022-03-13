@@ -3,10 +3,14 @@ import React from "react"
 
 const Frontpage = () => {
     return (
+
         <div className="home">
-        <p><a href="/managerlogin">Manager Login</a></p>
-<p><a href="/adminlogin">Admin Login</a></p>
-<p><a href="/register">Register</a></p>
+            
+        
+
+                <p><a href="/managerlogin">Manager Login</a></p>
+        <p><a href="/adminlogin">Admin Login</a></p>
+        <p><a href="/register">Register</a></p>
         </div>
     )
 }

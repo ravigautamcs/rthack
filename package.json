@@ -6,12 +6,13 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon src/app.js -e js",
-    "start": "node index.js client/App.js"
+    "client": "cd client && npm start",
+    "dev": "concurrently \"nodemon index.js\" \" npm run client \""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^7.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.12.10"
